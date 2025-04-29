@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --name imagePreview ./src/imagePreview.ts",
+    "build:libWithVue": "vue-cli-service build --target lib --inline-vue --name imagePreviewWithVue  ./src/imagePreview.ts",
+    "build": "npm run build:lib && npm run build:libWithVue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "vant": "^2.13.7",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -19,6 +22,7 @@
     "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "@vue/eslint-config-typescript": "^9.1.0",
+    "babel-plugin-import": "^1.13.8",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "less": "^4.0.0",

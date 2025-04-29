@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
+// import Vue from 'vue'
+// import App from './App.vue'
 
-Vue.config.productionTip = false
+import imagePreview from "./imagePreview";
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+// Vue.config.productionTip = false
+
+// new Vue({
+//   render: h => h(App),
+// }).$mount('#app')
+
+imagePreview(['https://img01.yzcdn.cn/vant/apple-1.jpg'])

@@ -1,24 +1,11 @@
 # image-preview
 
-## Project setup
-```
-npm install
-```
+使用 vue2 & vant 2 创建的图片预览组件，专用在于移动端h5页面
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+```javascript
 
-### Compiles and minifies for production
-```
-npm run build
-```
+import imagePreview from "impage-preview"
+import 'image-preview/dist/imagePreviewWithVue.css'
 
-### Lints and fixes files
+imagePreview(['https://img01.yzcdn.cn/vant/apple-1.jpg'])
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
